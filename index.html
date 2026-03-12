@@ -463,7 +463,7 @@ footer{background:var(--ink2);padding:1.6rem 3.5rem;display:flex;align-items:cen
           <div class="pstats">
             <div class="ps"><span class="psn">3+</span><span class="psl">Org. Led</span></div>
             <div class="ps"><span class="psn">🏆</span><span class="psl">Duta Genre</span></div>
-            <div class="ps"><span class="psn">3.43</span><span class="psl">GPA</span></div><!-- TO EDIT: GPA -->
+            <div class="ps"><span class="psn">3.43</span><span class="psl">GPA</span></div>
           </div>
           <div class="pdiv"></div>
           <div class="ptags">
@@ -942,7 +942,7 @@ footer{background:var(--ink2);padding:1.6rem 3.5rem;display:flex;align-items:cen
         <div class="edu-degree">Bachelor of Chemical Engineering</div>
         <div class="edu-school">🎓 Universitas Syiah Kuala, Banda Aceh</div>
         <div class="edu-desc">Semester 5–6. Focus areas: process simulation, reaction engineering, thermodynamics, and AI applications in chemical engineering. Active in PSEC and multiple student organizations.<!-- TO EDIT: Add thesis/research topic if any --></div>
-        <div class="edu-gpa">GPA: 3.43 / 4.00</div><!-- TO EDIT -->
+        <div class="edu-gpa">GPA: 3.43 / 4.00</div>
       </div>
     </div>
 
@@ -963,15 +963,14 @@ footer{background:var(--ink2);padding:1.6rem 3.5rem;display:flex;align-items:cen
         <a href="https://www.instagram.com/sripebrimlynti_/" target="_blank" class="slink"><div class="slink-icon">◈</div><div class="slink-info"><div class="slink-platform">Instagram</div><div class="slink-handle">@sripebrimlynti_</div></div><div class="slink-arr">→</div></a>
       </div>
     </div>
-    <form class="cform" onsubmit="sendMsg(event)">
+    <form class="cform" action="https://formspree.io/f/xpqyrwkb" method="POST">
       <div class="frow">
-        <div class="fgrp"><label class="flabel">Name</label><input type="text" class="finput" placeholder="Your name" required></div>
-        <div class="fgrp"><label class="flabel">Email</label><input type="email" class="finput" placeholder="you@email.com" required></div>
+        <div class="fgrp"><label class="flabel">Name</label><input type="text" name="name" class="finput" placeholder="Your name" required></div>
+        <div class="fgrp"><label class="flabel">Email</label><input type="email" name="email" class="finput" placeholder="you@email.com" required></div>
       </div>
-      <div class="fgrp"><label class="flabel">Subject</label><input type="text" class="finput" placeholder="Internship / Speaking Invitation / Collaboration"></div>
-      <div class="fgrp"><label class="flabel">Message</label><textarea class="ftxt" placeholder="Tell me about the opportunity..."></textarea></div>
+      <div class="fgrp"><label class="flabel">Subject</label><input type="text" name="subject" class="finput" placeholder="Internship / Speaking Invitation / Collaboration"></div>
+      <div class="fgrp"><label class="flabel">Message</label><textarea name="message" class="ftxt" placeholder="Tell me about the opportunity..."></textarea></div>
       <button type="submit" class="fbtn">Send Message →</button>
-      <div class="fsuccess" id="fmsg">✓ Sent! I'll reply within 24–48 hours.</div>
     </form>
   </div>
 </section>
